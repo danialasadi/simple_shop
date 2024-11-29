@@ -1,9 +1,10 @@
-import 'package:artacode_test/Features/Login/presentation/screens/start_page.dart';
-import 'package:artacode_test/Features/Shop/domain/usecases/delete_database_Shop.dart';
-import 'package:artacode_test/Features/Shop/presentation/screens/single_product_page.dart';
-import 'package:artacode_test/cores/params/shop_usecase_params.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
-import 'package:artacode_test/locator.dart';
+
+import 'package:danial_asadi/Features/Login/presentation/screens/start_page.dart';
+import 'package:danial_asadi/Features/Shop/domain/usecases/delete_database_Shop.dart';
+import 'package:danial_asadi/Features/Shop/presentation/screens/single_product_page.dart';
+import 'package:danial_asadi/cores/params/shop_usecase_params.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
+import 'package:danial_asadi/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

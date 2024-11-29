@@ -1,5 +1,6 @@
-import 'package:artacode_test/Features/Login/presentation/screens/login_page.dart';
-import 'package:artacode_test/Features/Login/presentation/screens/register_page.dart';
+
+import 'package:danial_asadi/Features/Login/presentation/screens/login_page.dart';
+import 'package:danial_asadi/Features/Login/presentation/screens/register_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

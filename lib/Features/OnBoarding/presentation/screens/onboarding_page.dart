@@ -1,9 +1,10 @@
-import 'package:artacode_test/Features/Login/presentation/screens/start_page.dart';
-import 'package:artacode_test/Features/OnBoarding/domain/usecases/insert_database_onboarding_usecase.dart';
-import 'package:artacode_test/Features/OnBoarding/presentation/widgets/onboardingpages_widget.dart';
-import 'package:artacode_test/cores/params/onboarding_usecase_params.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
-import 'package:artacode_test/locator.dart';
+
+import 'package:danial_asadi/Features/Login/presentation/screens/start_page.dart';
+import 'package:danial_asadi/Features/OnBoarding/domain/usecases/insert_database_onboarding_usecase.dart';
+import 'package:danial_asadi/Features/OnBoarding/presentation/widgets/onboardingpages_widget.dart';
+import 'package:danial_asadi/cores/params/onboarding_usecase_params.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
+import 'package:danial_asadi/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

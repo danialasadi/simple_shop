@@ -1,9 +1,9 @@
-import 'package:artacode_test/Features/Login/presentation/bloc/auth_bloc.dart';
-import 'package:artacode_test/Features/Login/presentation/bloc/auth_status.dart';
-import 'package:artacode_test/Features/Login/presentation/screens/complete_status_login_page.dart';
-import 'package:artacode_test/Features/Login/presentation/screens/register_page.dart';
-import 'package:artacode_test/Features/Shop/presentation/screens/shop_page.dart';
-import 'package:artacode_test/locator.dart';
+
+import 'package:danial_asadi/Features/Login/presentation/bloc/auth_bloc.dart';
+import 'package:danial_asadi/Features/Login/presentation/bloc/auth_status.dart';
+import 'package:danial_asadi/Features/Login/presentation/screens/complete_status_login_page.dart';
+import 'package:danial_asadi/Features/Shop/presentation/screens/shop_page.dart';
+import 'package:danial_asadi/locator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -28,6 +28,8 @@ class _LoginPageState extends State<LoginPage> {
       child: BlocConsumer<AuthBloc, AuthState>(
         listener: (context, state) {
           if (state.authStatus is AuthCompleted) {
+                              FocusScope.of(context).unfocus();
+
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(
                 builder: (context) {
@@ -60,7 +62,17 @@ class _LoginPageState extends State<LoginPage> {
               ),
             );
           } else {
-            return Container();
+           return Scaffold(
+              backgroundColor: Colors.red,
+              body: Center(
+                  child: Text(
+                'خطا',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30.sp,
+                    fontFamily: 'yekanbakh'),
+              )),
+            );
           }
         },
       ),

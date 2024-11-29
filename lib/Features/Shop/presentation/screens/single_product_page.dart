@@ -1,8 +1,9 @@
-import 'package:artacode_test/Features/Login/presentation/screens/start_page.dart';
-import 'package:artacode_test/Features/Shop/domain/usecases/delete_database_Shop.dart';
-import 'package:artacode_test/cores/params/shop_usecase_params.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
-import 'package:artacode_test/locator.dart';
+
+import 'package:danial_asadi/Features/Login/presentation/screens/start_page.dart';
+import 'package:danial_asadi/Features/Shop/domain/usecases/delete_database_Shop.dart';
+import 'package:danial_asadi/cores/params/shop_usecase_params.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
+import 'package:danial_asadi/locator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -84,7 +85,7 @@ class _SingleProductPageState extends State<SingleProductPage> {
                   height: 5.h,
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40.w),
+                  padding: EdgeInsets.symmetric(horizontal: 35.w),
                   child: Align(
                     alignment: Alignment.center,
                     child: Text(
@@ -94,7 +95,7 @@ class _SingleProductPageState extends State<SingleProductPage> {
                           fontWeight: FontWeight.w900,
                           color: Colors.black,
                           fontFamily: 'yekanbakh',
-                          fontSize: 27.sp),
+                          fontSize: 24.5.sp),
                     ),
                   ),
                 ),
@@ -199,7 +200,7 @@ class _SingleProductPageState extends State<SingleProductPage> {
                   ],
                 ),
                 SizedBox(
-                  height: 10.h,
+                  height: 0.h,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40.w),
@@ -374,10 +375,10 @@ class _SingleProductPageState extends State<SingleProductPage> {
                 const Spacer(),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(300.w, 45.h),
-                    maximumSize: Size(300.w, 45.h),
+                    minimumSize: Size(300.w, 50.h),
+                    maximumSize: Size(300.w, 50.h),
                     padding: EdgeInsetsDirectional.symmetric(
-                        horizontal: 40.w, vertical: 10.h),
+                        horizontal: 40.w, vertical: 5.h),
                     elevation: 0,
                     backgroundColor: const Color(0XFF0183FF),
                   ),

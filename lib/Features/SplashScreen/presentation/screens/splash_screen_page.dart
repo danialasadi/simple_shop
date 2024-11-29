@@ -1,13 +1,12 @@
 import 'dart:async';
 
-import 'package:artacode_test/Features/Login/presentation/screens/start_page.dart';
-import 'package:artacode_test/Features/OnBoarding/presentation/screens/onboarding_page.dart';
-import 'package:artacode_test/Features/Shop/presentation/screens/shop_page.dart';
-import 'package:artacode_test/Features/SplashScreen/domain/usecases/read_token_splash_screen_usecase.dart';
-import 'package:artacode_test/cores/params/login_usecase_params.dart';
-import 'package:artacode_test/cores/params/splash_screen_usecase_params.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
-import 'package:artacode_test/locator.dart';
+import 'package:danial_asadi/Features/Login/presentation/screens/start_page.dart';
+import 'package:danial_asadi/Features/OnBoarding/presentation/screens/onboarding_page.dart';
+import 'package:danial_asadi/Features/Shop/presentation/screens/shop_page.dart';
+import 'package:danial_asadi/Features/SplashScreen/domain/usecases/read_token_splash_screen_usecase.dart';
+import 'package:danial_asadi/cores/params/splash_screen_usecase_params.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
+import 'package:danial_asadi/locator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,7 +34,6 @@ class SplashScreenPage extends StatelessWidget {
       }
     }
 
-
     entryCheck() async {
       ReadTokenSplashScreenDatabaseUsecase readSplashScreenDatabaseUsecase =
           locator.get();
@@ -54,7 +52,6 @@ class SplashScreenPage extends StatelessWidget {
       }
     }
 
-
     Timer(
       const Duration(seconds: 5),
       () async {
@@ -69,10 +66,7 @@ class SplashScreenPage extends StatelessWidget {
             );
           }
         } else {
-
-
-          if(await entryCheck()){
-
+          if (await entryCheck()) {
             if (context.mounted) {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
@@ -82,9 +76,8 @@ class SplashScreenPage extends StatelessWidget {
                 ),
               );
             }
-
-          }else{
-                if (context.mounted) {
+          } else {
+            if (context.mounted) {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                   builder: (context) {
@@ -94,10 +87,11 @@ class SplashScreenPage extends StatelessWidget {
               );
             }
           }
-     
         }
       },
     );
+
+ 
 
     return Scaffold(
       body: SafeArea(

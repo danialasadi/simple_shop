@@ -15,7 +15,8 @@
 
 
 
-import 'package:artacode_test/Features/Login/domain/entity/user_entity.dart';
+
+import 'package:danial_asadi/Features/Login/domain/entity/user_entity.dart';
 
 class UserModel extends UserEntity {
   const UserModel({super.user});

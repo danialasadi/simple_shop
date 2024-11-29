@@ -1,8 +1,7 @@
-import 'package:artacode_test/Features/Login/presentation/screens/register_page.dart';
-import 'package:artacode_test/Features/Shop/presentation/screens/shop_page.dart';
-import 'package:artacode_test/Features/SplashScreen/presentation/screens/splash_screen_page.dart';
-import 'package:artacode_test/cores/config/theme.dart';
-import 'package:artacode_test/locator.dart';
+
+import 'package:danial_asadi/Features/SplashScreen/presentation/screens/splash_screen_page.dart';
+import 'package:danial_asadi/cores/config/theme.dart';
+import 'package:danial_asadi/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,24 +25,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 812),
+      designSize:
+          const Size(375, 840), 
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          // navigatorKey: Constants.navigatorKey,
           debugShowCheckedModeBanner: false,
-          title: 'First Method', 
-          theme: MyThemes.lightTheme(fontFamily: 'yekanbakh'), 
+          title: 'First Method',
+          theme: MyThemes.lightTheme(fontFamily: 'yekanbakh'),
           home: const SplashScreenPage(),
-          builder: (context, child) {
-            return Theme(
-              data: MyThemes.lightTheme(fontFamily: 'yekanbakh'), 
-              child: child!,
-            );
-          },
         );
       },
     );
   }
-  }
+}

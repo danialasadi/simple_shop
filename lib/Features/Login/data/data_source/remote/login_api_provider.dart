@@ -1,4 +1,4 @@
-import 'package:artacode_test/cores/config/constants.dart';
+import 'package:danial_asadi/cores/config/constants.dart';
 import 'package:dio/dio.dart';
 
 class LoginApiProvider {

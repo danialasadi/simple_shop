@@ -1,8 +1,9 @@
-import 'package:artacode_test/Features/OnBoarding/domain/repository/onboarding_repository.dart';
-import 'package:artacode_test/cores/params/onboarding_usecase_params.dart';
-import 'package:artacode_test/cores/params/login_usecase_params.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
-import 'package:artacode_test/cores/usecase/use_case.dart';
+
+
+import 'package:danial_asadi/Features/OnBoarding/domain/repository/onboarding_repository.dart';
+import 'package:danial_asadi/cores/params/onboarding_usecase_params.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
+import 'package:danial_asadi/cores/usecase/use_case.dart';
 
 class InsertOnBoardingDatabaseUsecase
     extends UseCase<DataState<dynamic>, OnBoardingUsecaseParams> {

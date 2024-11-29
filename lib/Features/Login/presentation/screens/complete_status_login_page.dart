@@ -1,5 +1,6 @@
-import 'package:artacode_test/Features/Login/presentation/bloc/auth_bloc.dart';
-import 'package:artacode_test/Features/Login/presentation/screens/register_page.dart';
+
+import 'package:danial_asadi/Features/Login/presentation/bloc/auth_bloc.dart';
+import 'package:danial_asadi/Features/Login/presentation/screens/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -144,7 +145,6 @@ class CompleteStatusLoginPage extends StatelessWidget {
                   backgroundColor: const Color(0XFF0183FF),
                 ),
                 onPressed: () {
-                  FocusScope.of(context).unfocus();
                   if (formKey.currentState?.validate() ?? false) {
                     context.read<AuthBloc>().add(LoginEvent(
                         email: textController1.text,

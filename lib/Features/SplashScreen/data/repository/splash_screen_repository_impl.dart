@@ -1,6 +1,8 @@
-import 'package:artacode_test/Features/SplashScreen/data/data_source/local/splash_screen_secure_storage.dart';
-import 'package:artacode_test/Features/SplashScreen/domain/repository/splash_screen_repository.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
+
+
+import 'package:danial_asadi/Features/SplashScreen/data/data_source/local/splash_screen_secure_storage.dart';
+import 'package:danial_asadi/Features/SplashScreen/domain/repository/splash_screen_repository.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
 
 class SplashScreenRepositoryImpl extends SplashScreenRepository {
   final SplashScreenDatabase splashScreenDatabase;

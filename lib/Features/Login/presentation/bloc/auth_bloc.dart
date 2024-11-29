@@ -1,10 +1,11 @@
-import 'package:artacode_test/Features/Login/domain/usecases/insert_auth_token_usecase.dart';
-import 'package:artacode_test/Features/Login/domain/usecases/login_api_usecase.dart';
-import 'package:artacode_test/Features/Login/domain/usecases/register_api_usecase.dart';
-import 'package:artacode_test/Features/Login/presentation/bloc/auth_status.dart';
-import 'package:artacode_test/cores/params/login_usecase_params.dart';
-import 'package:artacode_test/cores/resources/data_state.dart';
+
 import 'package:bloc/bloc.dart';
+import 'package:danial_asadi/Features/Login/domain/usecases/insert_auth_token_usecase.dart';
+import 'package:danial_asadi/Features/Login/domain/usecases/login_api_usecase.dart';
+import 'package:danial_asadi/Features/Login/domain/usecases/register_api_usecase.dart';
+import 'package:danial_asadi/Features/Login/presentation/bloc/auth_status.dart';
+import 'package:danial_asadi/cores/params/login_usecase_params.dart';
+import 'package:danial_asadi/cores/resources/data_state.dart';
 import 'package:equatable/equatable.dart';
 
 part 'auth_event.dart';

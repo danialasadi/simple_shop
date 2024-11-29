@@ -1,4 +1,5 @@
-import 'package:artacode_test/cores/resources/data_state.dart';
+
+import 'package:danial_asadi/cores/resources/data_state.dart';
 
 abstract class LoginRepository {
   Future<DataState<String?>> login({required String email , required String pass });
